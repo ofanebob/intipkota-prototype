@@ -1,0 +1,30 @@
+/**
+ * Android emoji theme
+ */
+
+@font-face{
+  font-family:'AndroidEmoji';
+  src:url('../font/android/AndroidEmoji.eot');
+  src:url('../font/android/AndroidEmoji.eot?#iefix') format('embedded-opentype'),
+    url('../font/android/AndroidEmoji.woff') format('woff'),
+    url('../font/android/AndroidEmoji.ttf') format('truetype'),
+    url('../font/android/AndroidEmoji.svg#FontAwesomeRegular') format('svg');
+  font-weight:normal;
+  font-style:normal;
+}
+
+
+.emojified .emoji {
+    font-family: 'AndroidEmoji';
+    font-size: 1.2em;
+}
+
+/* mirror pixel size overrides */
+
+.emoji-64 .emojified .emoji {
+    font-size: 65px;
+}
+
+.emoji-25 .emojified .emoji {
+    font-size: 26px;
+}

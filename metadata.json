@@ -1,0 +1,73 @@
+{
+	"info":"Library Meta Data",
+	"description":"File konfigurasi untuk web sebelum config.php & database",
+	"author":"Ofan Ebob",
+	"version":"1.9.3",
+	"require":
+	[
+		"regex",
+		"db",
+		"crud",
+		"curl",
+		"route",
+		"trim.string",
+		"get.method",
+		"url.rules",
+		"browser.agent",
+		"array.convert",
+		"xml.converter",
+		"xml.array",
+		"time.extension",
+		"cache.handler",
+		"html.compress",
+		"html.generator",
+		"exception.handler",
+		"json.key.extractor"
+	],
+	"setup":
+	{
+		"webname":"intipkota.com",
+		"webauthor":"Ofan Ebob",
+		"location":"West Java, Indonesia",
+		"description":"Kenali & cari informasi kota favorit di intipkota.com",
+		"keywords":
+		[
+			"cari kota",
+			"informasi kota",
+			"kepoin kota",
+			"venue kota",
+			"tempat nongkrong",
+			"cafe",
+			"rumah makan",
+			"hotel",
+			"wikipedia kota",
+			"peta kota"
+		],
+		"lang":
+		{
+			"base":"id",
+			"code":"id_ID"
+		},
+		"db":
+		{
+			"server":"localhost",
+			"username":"root",
+			"password":"",
+			"table":"intipkota"
+		},
+		"host":
+		{
+			"prefix":"http://192.168.1.5"
+		},
+		"mode":
+		{
+			"developing":false
+		},
+		"icon_venue":
+		{
+			"size":64,
+			"background":""
+		},
+		"limitsuggest":2
+	}
+}
