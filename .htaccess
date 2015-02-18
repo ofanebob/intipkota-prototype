@@ -1,0 +1,41 @@
+Options All -Indexes
+
+Options +FollowSymLinks
+IndexIgnore */*
+
+# Pengalihan ke page/error hanya sebuah trik dari direktori kosong
+ErrorDocument 500 http://192.168.1.5/intipkota.com/404
+ErrorDocument 404 http://192.168.1.5/intipkota.com/404
+ErrorDocument 401 http://192.168.1.5/intipkota.com/404
+ErrorDocument 403 http://192.168.1.5/intipkota.com/404
+ErrorDocument 503 http://192.168.1.5/intipkota.com/unreachable
+
+<Files ~ "((lib|loader|config)\.php|(metadata)\.json|\.(json|xml))$">
+Order Deny,Allow
+Deny from all
+#Remove this comment and clear # bellow on Allow from if online server
+#Allow from 192.168.1.5
+</Files>
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteRule /?\.htaccess$ - [F,L]
+
+RewriteBase /intipkota.com/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?uri=$1 [QSA,L]
+
+#RewriteBase /intipkota.com/
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /intipkota.com/index.php [L]
+
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?192.168.1.5/intipkota.com/.*$ [NC]
+#RewriteRule \.(png|jpg|gif|js|css|json|xml)$ _ [NC,R,L]
+
+</IfModule>
