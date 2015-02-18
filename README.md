@@ -22,7 +22,7 @@ Menggunakan retreive API data dari beberapa penyedia layanan informasi seperti:
 - Freebase API
 
 ####Implementasi MVC dari Framework
-Intipkota Prototype menggunakan metode MVC yang diadaptasi dari Code Igneter & Laravel, namun beberapa fitur framework tersebut hanya di gunakan sebagian/dipangkas menyesuaikan kebutuhan.
+Intipkota Prototype menggunakan metode MVC yang diadaptasi dari Codeigniter & Laravel, namun beberapa fitur framework tersebut hanya di gunakan sebagian/dipangkas menyesuaikan kebutuhan.
 
 ####Informasi Perkembangan/Update Intipkota Prototype terkini hubungi
 - Email: sofandani@gmail.com
