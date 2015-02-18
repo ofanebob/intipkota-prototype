@@ -51,13 +51,13 @@
 		"db":
 		{
 			"server":"localhost",
-			"username":"root",
-			"password":"",
-			"table":"intipkota"
+			"username":"****",
+			"password":"****",
+			"table":"*****"
 		},
 		"host":
 		{
-			"prefix":"http://192.168.1.5"
+			"prefix":"htpp://"
 		},
 		"mode":
 		{
